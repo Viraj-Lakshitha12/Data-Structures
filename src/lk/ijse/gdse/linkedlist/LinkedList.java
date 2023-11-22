@@ -69,4 +69,53 @@ public class LinkedList {
         }
     }
 
+    public void deleteAtBegining() {
+        if (head == null) {
+            System.out.println("List is empty. Cannot delete from an empty list.");
+            return;
+        }
+        head = head.next;
+    }
+
+    public void deleteAtEnding() {
+        if (head == null) {
+            System.out.println("List is empty. Cannot delete from an empty list.");
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node current = head;
+        while (current.next.next != null) {
+            current = current.next;
+        }
+        current.next = null;
+    }
+
+    public void deleteAtPosition(int index) {
+        if (head == null) {
+            System.out.println("List is empty. Cannot delete from an empty list.");
+            return;
+        }
+        if (index < 0) {
+            System.out.println("Invalid index.");
+            return;
+        }
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+        Node current = head;
+        for (int i = 0; i < index - 1 && current != null; i++) {
+            current = current.next;
+        }
+        if (current == null || current.next == null) {
+            System.out.println("Invalid index.");
+            return;
+        }
+        current.next = current.next.next;
+    }
+
+
 }

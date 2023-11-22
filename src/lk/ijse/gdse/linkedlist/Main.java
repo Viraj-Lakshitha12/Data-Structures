@@ -17,6 +17,15 @@ public class Main {
 
         list.interstAtPosition(700,3);
         list.printLinkedList();
+
+        list.deleteAtBegining();
+        list.printLinkedList();
+
+        list.deleteAtEnding();
+        list.printLinkedList();
+
+        list.deleteAtPosition(3);
+        list.printLinkedList();
     }
 
 }
