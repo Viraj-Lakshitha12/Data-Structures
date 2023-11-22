@@ -4,7 +4,6 @@ package lk.ijse.gdse.linkedlist;
 public class LinkedList {
 
 
-
     class Node{
         private int data;
         private Node next;
@@ -131,4 +130,20 @@ public class LinkedList {
         return  size;
     }
 
+    public int get(int index) {
+        if (index < 0) {
+            System.out.println("Index not valid");
+        }
+        Node current = head;
+        int currentIndex = 0;
+
+        while (current != null) {
+            if (currentIndex == index) {
+                return current.data;
+            }
+            current = current.next;
+            currentIndex++;
+        }
+        throw new IndexOutOfBoundsException("Index out of bounds: " + index);
+    }
 }

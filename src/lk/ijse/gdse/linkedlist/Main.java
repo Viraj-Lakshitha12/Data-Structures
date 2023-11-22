@@ -28,6 +28,8 @@ public class Main {
         list.printLinkedList();
 
         System.out.println("Size : "+list.size());
+
+        System.out.println("get number : "+list.get(2));
     }
 
 }
