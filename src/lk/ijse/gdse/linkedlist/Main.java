@@ -26,6 +26,8 @@ public class Main {
 
         list.deleteAtPosition(3);
         list.printLinkedList();
+
+        System.out.println("Size : "+list.size());
     }
 
 }

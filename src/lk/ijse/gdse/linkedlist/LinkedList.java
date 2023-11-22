@@ -3,6 +3,8 @@ package lk.ijse.gdse.linkedlist;
 
 public class LinkedList {
 
+
+
     class Node{
         private int data;
         private Node next;
@@ -71,7 +73,7 @@ public class LinkedList {
 
     public void deleteAtBegining() {
         if (head == null) {
-            System.out.println("List is empty. Cannot delete from an empty list.");
+            System.out.println("List is empty.");
             return;
         }
         head = head.next;
@@ -79,23 +81,24 @@ public class LinkedList {
 
     public void deleteAtEnding() {
         if (head == null) {
-            System.out.println("List is empty. Cannot delete from an empty list.");
+            System.out.println("List is empty");
             return;
         }
         if (head.next == null) {
             head = null;
             return;
         }
-        Node current = head;
-        while (current.next.next != null) {
-            current = current.next;
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
         }
-        current.next = null;
+        temp.next = null;
     }
+
 
     public void deleteAtPosition(int index) {
         if (head == null) {
-            System.out.println("List is empty. Cannot delete from an empty list.");
+            System.out.println("List is empty.");
             return;
         }
         if (index < 0) {
@@ -117,5 +120,15 @@ public class LinkedList {
         current.next = current.next.next;
     }
 
+
+    public int size() {
+        int size = 0;
+        Node temp = head;
+        while (temp != null) {
+            size++;
+            temp = temp.next;
+        }
+        return  size;
+    }
 
 }
