@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Stack {
     int [] elementData;
     int top;
-    private boolean empty;
 
     public Stack(int initialCount) {
         elementData=new int[initialCount];
