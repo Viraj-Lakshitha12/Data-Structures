@@ -42,24 +42,33 @@ public class Queue {
     }
 
     public void printQueue() {
-        System.out.print("[");
-        for (int i = frontPoint; i <= rearPoint; i++) {
-            System.out.print(elementData[i]+" ");
+        if (isEmpty()){
+            System.out.println("empty");
+        }else {
+            System.out.print("[");
+            for (int i = frontPoint; i <= rearPoint; i++) {
+                System.out.print(elementData[i]+" ");
+            }
+            System.out.println("\b]");
         }
-        System.out.println("\b]");
+
     }
-<<<<<<< HEAD
+
     public boolean isEmpty(){
-        return frontPoint==-1;
+        return frontPoint==-1 || frontPoint > rearPoint;
     }
 
     public boolean isFull(){
         return elementData.length-1==rearPoint;
     }
-=======
->>>>>>> f7030bf5c29b53ad81195a8477bfe6ea47c11310
+
 
     public int size() {
         return (rearPoint-frontPoint)+1;
+    }
+
+    public void clear() {
+        frontPoint=-1;
+        rearPoint=-1;
     }
 }

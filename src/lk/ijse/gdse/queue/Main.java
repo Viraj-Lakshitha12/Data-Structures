@@ -22,6 +22,10 @@ public class Main {
         queue.printQueue();
 
         System.out.println("Size : "+queue.size());
+
+        queue.clear();
+
+        queue.printQueue();
     }
 
 }
