@@ -24,4 +24,16 @@ public class Queue {
     public int peek() {
         return elementData[frontPoint];
     }
+
+    public void printQueue() {
+        System.out.print("[");
+        for (int i = frontPoint; i <= rearPoint; i++) {
+            System.out.print(elementData[i]+" ");
+        }
+        System.out.println("\b]");
+    }
+
+    public int size() {
+        return (rearPoint-frontPoint)+1;
+    }
 }
