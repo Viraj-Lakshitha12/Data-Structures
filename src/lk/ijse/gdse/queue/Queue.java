@@ -48,6 +48,7 @@ public class Queue {
         }
         System.out.println("\b]");
     }
+<<<<<<< HEAD
     public boolean isEmpty(){
         return frontPoint==-1;
     }
@@ -55,6 +56,8 @@ public class Queue {
     public boolean isFull(){
         return elementData.length-1==rearPoint;
     }
+=======
+>>>>>>> f7030bf5c29b53ad81195a8477bfe6ea47c11310
 
     public int size() {
         return (rearPoint-frontPoint)+1;
