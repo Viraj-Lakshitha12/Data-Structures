@@ -14,6 +14,9 @@ public class Main {
         list.insertAtEnding(50);
 
         list.printLinkedList();
+
+        list.interstAtPosition(700,3);
+        list.printLinkedList();
     }
 
 }
