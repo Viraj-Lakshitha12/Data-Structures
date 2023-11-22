@@ -10,8 +10,13 @@ public class Main {
         queue.enQueue(50);
 
         System.out.println("deQueue : "+queue.deQueue());
+        System.out.println("deQueue : "+queue.deQueue());
 
         System.out.println("peek : "+queue.peek());
+
+        queue.printQueue();
+
+        System.out.println("Size : "+queue.size());
     }
 
 }
