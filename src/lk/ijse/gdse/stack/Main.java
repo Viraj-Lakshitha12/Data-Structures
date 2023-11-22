@@ -40,5 +40,7 @@ public class Main {
 
         stack.push(800);
         System.out.println("Size : "+stack.size());
+
+        stack.clear();
     }
 }
