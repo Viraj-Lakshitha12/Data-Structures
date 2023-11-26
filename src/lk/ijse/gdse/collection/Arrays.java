@@ -8,5 +8,6 @@ public class Arrays {
         ob[1]=10.10;
         ob[2]="Hello";
         System.out.println(java.util.Arrays.toString(ob));
+
     }
 }
