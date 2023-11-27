@@ -9,5 +9,6 @@ public class Arrays {
         ob[2]="Hello";
         System.out.println(java.util.Arrays.toString(ob));
 
+
     }
 }
