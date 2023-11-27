@@ -1,9 +1,7 @@
 package lk.ijse.gdse.collection;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class ArrayList_Test {
     public static void main(String[] args) {
@@ -23,6 +21,10 @@ public class ArrayList_Test {
         System.out.println("After sort list");
         System.out.println(list1);
 
+        list1.sort(Collections.reverseOrder());
+        System.out.println("After Reverse sort list");
+        System.out.println(list1);
+
         ArrayList <String> arrayList = new ArrayList<String>();
 
         arrayList.add("kamal");
@@ -31,5 +33,8 @@ public class ArrayList_Test {
 
         System.out.println(arrayList);
 
+        String [] arr = {"1","2","3","4"};
+        ArrayList<String> arrayList1 = new ArrayList<>(Arrays.asList(arr));
+        System.out.println("arr coty to arrayList : "+arrayList1);
     }
 }
