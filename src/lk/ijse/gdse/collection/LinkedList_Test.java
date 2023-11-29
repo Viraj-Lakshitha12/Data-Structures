@@ -1,5 +1,6 @@
 package lk.ijse.gdse.collection;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -18,8 +19,19 @@ public class LinkedList_Test {
      list.set(4,400);
      System.out.println(list);
 
-     Integer i = list.get(2);
-     System.out.println(i);
+     Integer i1 = list.get(2);
+     System.out.println(i1);
+
+
+        for (Integer integer : list) {
+            System.out.print(integer+" ");
+        }
+     System.out.println("\n---------------------------");
+
+     Iterator<Integer> iterator = list.iterator();
+     while (iterator.hasNext()){
+       System.out.print(iterator.next()+" ");
+     }
 
     }
 }
