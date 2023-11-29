@@ -1,14 +1,12 @@
 package lk.ijse.gdse.collection;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class LinkedList_Test {
     public static void main(String[] args) {
      List<Integer> list = new LinkedList<Integer>();
-     list.add(10);
-     list.add(20);
+     list.add(1000);
+     list.add(200);
      list.add(30);
      list.add(40);
      System.out.println(list);
@@ -32,6 +30,17 @@ public class LinkedList_Test {
      while (iterator.hasNext()){
        System.out.print(iterator.next()+" ");
      }
+
+     List<Integer> list1 = new LinkedList<Integer>();
+     list1.addAll(list);
+     System.out.println("\nList 1 is : "+list1);
+//     list1.removeAll(list);
+
+
+     System.out.println("After Sorting");
+
+     Collections.sort(list1);
+     System.out.println(list1);
 
     }
 }
