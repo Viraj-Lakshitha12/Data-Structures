@@ -36,5 +36,7 @@ public class ArrayList_Test {
         String [] arr = {"1","2","3","4"};
         ArrayList<String> arrayList1 = new ArrayList<>(Arrays.asList(arr));
         System.out.println("arr coty to arrayList : "+arrayList1);
+
+
     }
 }
