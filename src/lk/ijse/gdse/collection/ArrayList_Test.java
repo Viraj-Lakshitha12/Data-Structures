@@ -38,5 +38,13 @@ public class ArrayList_Test {
         System.out.println("arr coty to arrayList : "+arrayList1);
 
 
+        ArrayList<Integer> arrayList2 = new ArrayList<>();
+        arrayList2.add(10);
+        arrayList2.add(20);
+        arrayList2.add(30);
+        arrayList2.add(40);
+        System.out.println(arrayList2);
+        arrayList2.add(0,100);
+        System.out.println(arrayList2);
     }
 }
