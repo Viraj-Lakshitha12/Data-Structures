@@ -22,6 +22,14 @@ public class HashMap_Test {
 
         System.out.println(hashMap.containsKey(2)); // true
         System.out.println(hashMap.containsKey(5)); // false
+        System.out.println(hashMap.containsValue("Amal")); // true
+        System.out.println(hashMap.containsValue("AMAL")); // false
+
+        System.out.println(hashMap.isEmpty()); // false
+
+        System.out.println(hashMap.keySet()); // [1, 2]
+        System.out.println(hashMap.values()); //[kamal, Amal]
+
 
     }
 
