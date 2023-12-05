@@ -30,7 +30,6 @@ public class HashMap_Test {
         System.out.println(hashMap.keySet()); // [1, 2]
         System.out.println(hashMap.values()); //[kamal, Amal]
 
-
     }
 
 }
