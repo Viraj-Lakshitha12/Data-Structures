@@ -9,6 +9,7 @@ public class LinkedList_Test {
      list.add(200);
      list.add(30);
      list.add(40);
+     list.add(80);
      System.out.println(list);
 
      list.add(3,100);
@@ -36,9 +37,7 @@ public class LinkedList_Test {
      System.out.println("\nList 1 is : "+list1);
 //     list1.removeAll(list);
 
-
      System.out.println("After Sorting");
-
      Collections.sort(list1);
      System.out.println(list1);
 
